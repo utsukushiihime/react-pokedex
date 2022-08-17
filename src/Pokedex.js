@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Pokecard from './Pokecard';
+import PokeCard from './components/PokeCard';
 import './Pokedex.css';
 
 class Pokedex extends Component {
@@ -16,7 +16,7 @@ class Pokedex extends Component {
 				<h4>Total Experience: {this.props.exp}</h4>
 				<div className="Pokedex-cards">
 					{this.props.pokemon.map((p) => (
-						<Pokecard
+						<PokeCard
 							key={p.id}
 							id={p.id}
 							name={p.name}
